@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/openai:latest
+    restart: unless-stopped
+    env_file:
+      - openai-env
+    ports:
+      - "7045:80"
