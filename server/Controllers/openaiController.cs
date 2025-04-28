@@ -1,14 +1,14 @@
 namespace openai.Controllers;
 
-[Authorize]
+// [Authorize]
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class openaiController : ControllerBase
 {
     [HttpGet]
     public async Task<ActionResult<string>> GetAIMessage()
     {
-        return Ok("It's Working!");
+        return ("It's Working!");
     }
 
 }
