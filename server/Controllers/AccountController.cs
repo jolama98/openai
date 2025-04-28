@@ -1,5 +1,4 @@
 namespace openai.Controllers;
-
 [Authorize]
 [ApiController]
 [Route("[controller]")]
